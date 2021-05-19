@@ -1,0 +1,29 @@
+:host {
+    margin-right: -1px;
+    margin-top: -1px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+
+    .square {
+        background: #fff;
+        border: 1px solid #999;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 34px;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+        text-align: center;
+        
+    }
+
+    .square:focus {
+        outline: none;
+    }
+
+    .image{
+        background: lightgray;
+        width: 100%;
+    }
+}
