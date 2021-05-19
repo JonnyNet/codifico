@@ -1,0 +1,10 @@
+<div class="container" *ngIf="state$ | async as state">
+    <div class="turn-text" [ngClass]="{ 'active': state.winner }">{{ state.winner ? 'Winner' : 'Turn of' }} : {{ state.xIsNext ? 'X' : 'O' }}</div>
+    <div class="game">
+        <div class="board-row" *ngFor="let board of boards">
+            <app-square [id]="square" [text]="state.squares[square]"  *ngFor="let square of board" (clickEvent)="service.handleClick($event)">
+            </app-square>
+        </div>
+    </div>
+    <button class="btn" (click)="service.reset()">Reset</button>
+</div>

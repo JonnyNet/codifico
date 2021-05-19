@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .turn-text {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .active {
+        color: lightgreen;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: column;
+
+        .board-row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
